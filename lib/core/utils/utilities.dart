@@ -9,6 +9,7 @@ import 'package:rank_task/core/constants/app_constants.dart';
 import 'package:rank_task/ui/shared/colors.dart';
 
 class Utilities {
+
   static const String customErrorMessage =
       'An error occurred. Please try again';
 

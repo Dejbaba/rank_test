@@ -72,6 +72,7 @@ class UsernameValidator {
   }
 }
 
+
 class FieldValidator {
   static String validate(String value) {
     if (value != null) {
