@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:rank_task/ui/views/widgets/listview_items/activity_item.dart';
 
 import '../../../core/constants/app_constants.dart';
 import '../../shared/colors.dart';
@@ -16,7 +17,7 @@ class Home extends StatelessWidget {
             Container(
               margin: EdgeInsets.only(left: 23.w, right: 25.w),
               child: Card(
-                elevation: 10,
+                elevation: 7,
                 shadowColor: Colors.black,
                 shape: BeveledRectangleBorder(
                   borderRadius: BorderRadius.circular(6.0),
@@ -86,7 +87,7 @@ class Home extends StatelessWidget {
                             Text(
                               "₦ 200,000",
                               style: TextStyle(
-                                //fontFamily: "Circular Std",
+                                //fontFamily: "Circular Std Font",
                                 color: Colors.white,
                                 fontSize: 32.sp,
                                 fontWeight: FontWeight.w400,
@@ -133,6 +134,107 @@ class Home extends StatelessWidget {
                 ))
 
           ],
+        ),
+        SizedBox(height: 26.h,),
+        Padding(
+          padding:  EdgeInsets.only(left: 23.w, right: 25.67.w),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                'Activity',
+                style: TextStyle(
+                  //fontFamily: "Circular Std",
+                  color: Colors.black,
+                  fontSize: 18.sp,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+              Row(
+                children: [
+                  Text(
+                    'View all',
+                    style: TextStyle(
+                      //fontFamily: "Circular Std",
+                      color: manateeGrey,
+                      fontSize: 14.sp,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                  SizedBox(height: 8.68.h,),
+                  Icon(Icons.arrow_forward_ios_sharp, size: 10.h, color: manateeGrey,)
+                ],
+              ),
+            ],
+          ),
+        ),
+        SizedBox(height: 24.h,),
+        Container(
+          width: width(context),
+          color: Colors.white,
+          padding: EdgeInsets.symmetric(vertical: 16.h),
+          child: Column(
+            children: List.generate(dummyUsers.length, (index) => ActivityItem(
+              dummyUser: dummyUsers[index],
+            )),
+          ),
+        ),
+        SizedBox(height: 24.h,),
+        Padding(
+          padding: EdgeInsets.only(left: 23.w),
+          child: Text(
+            'Explore',
+            style: TextStyle(
+              //fontFamily: "Circular Std",
+              color: Colors.black,
+              fontSize: 18.sp,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+        ),
+        SizedBox(height: 16.h,),
+        Container(
+          color: Colors.white,
+          width: width(context),
+          padding: EdgeInsets.only(bottom: 17.46.h, left: 30.w, right: 16.w),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Padding(
+                padding:  EdgeInsets.only(top: 46.h),
+                child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Explore Places where\nVendPay is accepted',
+                          style: TextStyle(
+                            //fontFamily: "Circular Std",
+                            color: turquoiseBlue,
+                            fontSize: 20.sp,
+                            fontWeight: FontWeight.w700,
+                          ),
+                        ),
+                        SizedBox(height: 7.h,),
+                        Text(
+                          'VendPay is accepted in over\n20,000 stores across the country',
+                          style: TextStyle(
+                            //fontFamily: "Circular Std",
+                            color: shaftGrey,
+                            fontSize: 12.sp,
+                            fontWeight: FontWeight.w400,
+                          ),
+                        ),
+                      ],
+                    ),
+              ),
+              SizedBox(height: 2.w,),
+              Expanded(child: Padding(
+                padding: EdgeInsets.only(top: 19.h),
+                child: Image.asset("assets/images/explore_places.png"),
+              ))
+            ],
+          ),
         ),
       ],
     );

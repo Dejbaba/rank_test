@@ -29,7 +29,7 @@ class _BottomNav extends State<BottomNav> {
       onWillPop: () async => false,
       child: Consumer<BottomNavModel>(
         builder: (context, model, child) => Scaffold(
-          backgroundColor: Colors.white,
+          backgroundColor: mercuryGrey,
           appBar: AppBar(
             centerTitle: true,
             elevation: 0,
