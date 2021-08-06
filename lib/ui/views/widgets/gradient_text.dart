@@ -31,7 +31,7 @@ class GradientText extends StatelessWidget {
             ),
           ],
         ),
-        
+
       ),
     );
   }
