@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
             primarySwatch: Colors.blue,
           ),
           home: BottomNav(),
-          
+
         ),
       ),
       designSize: Size(375, 812),
