@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:rank_task/core/models/dummy_user.dart';
 
 class RoutePaths {
   static const String Onboarding = '/';
@@ -33,16 +34,7 @@ class SharedPrefKeys{
   static const String SEARCH_WORD = "searchWords";
 }
 
-const String marvelBaseUrl = 'https://gateway.marvel.com:443/v1/public/';
-const String marvelPublicKey = "c1ed5ae2a03d80ad8ddd8e4fb5667974";
-const String marvelPrivateKey = 'bc84c4594197d451d659e59b63d480ed4f4dc338';
-const String marvelDefaultPics = 'https://i.pinimg.com/originals/23/fc/1b/23fc1b3bf9c51261e2d1b415739221c8.png';
-const String comicVineBaseUrl = 'https://comicvine.gamespot.com/api/';
-const String comicVineApiKey = '600ebf11b1dda31d06be44cc1e06193330d5a5d7';
-const bool devMode = false;
-const String username = 'username';
-const String stageUrl = '';
-const String isremember = 'is_remember';
+
 const String emptyEmailField = 'Email field cannot be empty!';
 const String emptyTextField = 'Field cannot be empty!';
 const String emptyPasswordField = 'Password field cannot be empty';
@@ -94,5 +86,38 @@ double aspectRatio(BuildContext context){
 
   return aspectRatio;
 }
+
+
+
+///dummy data
+final dummyUsers = [
+  DummyUser(
+    fullName: "Oluwaleke Olorunda",
+    image: "assets/images/avatar_1.png",
+    amount: "₦ 5,450",
+    date: "23 Feb at 9:30 pm"
+  ),
+  DummyUser(
+      fullName: "McDonalds Restaurant, Ajah",
+      image: "assets/images/avatar_2.png",
+      amount: "₦ 5,450",
+      date: "23 Feb at 9:30 pm"
+  ),DummyUser(
+      fullName: "Mensa Robert",
+      image: "assets/images/avatar_3.png",
+      amount: "₦ 200,000",
+      date: "23 Feb at 9:30 pm"
+  ),DummyUser(
+      fullName: "Netflix HD subscription",
+      image: "assets/images/avatar_4.png",
+      amount: "₦ 4,850",
+      date: "23 Feb at 9:30 pm"
+  ),DummyUser(
+      fullName: "Uzodima Chinonzo",
+      image: "assets/images/avatar_5.png",
+      amount: "₦ 250,000",
+      date: "23 Feb at 9:30 pm"
+  ),
+];
 
 
