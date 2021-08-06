@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../constants/app_constants.dart';
-import 'package:rank_task/core/enums/card_type.dart';
+
 
 class EmailValidator {
   static String validateEmail(String value) {
@@ -85,7 +85,7 @@ class FieldValidator {
   }
 }
 
-class CardValidator {
+/*class CardValidator {
   static String validateCVV(String value) {
     if (value.isEmpty) {
       return emptyTextField;
@@ -308,4 +308,4 @@ class CardValidator {
 
     return widget;
   }
-}
+}*/
