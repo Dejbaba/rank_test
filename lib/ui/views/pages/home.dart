@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:rank_task/ui/views/pages/all_activities.dart';
 import 'package:rank_task/ui/views/widgets/listview_items/activity_item.dart';
 
 import '../../../core/constants/app_constants.dart';
@@ -152,13 +153,22 @@ class Home extends StatelessWidget {
               ),
               Row(
                 children: [
-                  Text(
-                    'View all',
-                    style: TextStyle(
-                      //fontFamily: "Circular Std",
-                      color: manateeGrey,
-                      fontSize: 14.sp,
-                      fontWeight: FontWeight.w600,
+                  InkResponse(
+                    onTap: ()=> Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        settings: RouteSettings(name: "/allActivities"),
+                        builder: (context) => AllActivities(),
+                      ),
+                    ),
+                    child: Text(
+                      'View all',
+                      style: TextStyle(
+                        //fontFamily: "Circular Std",
+                        color: manateeGrey,
+                        fontSize: 14.sp,
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
                   ),
                   SizedBox(height: 8.68.h,),

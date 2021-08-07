@@ -7,8 +7,10 @@ import 'package:rank_task/ui/views/pages/activity_details.dart';
 
 class ActivityItem extends StatelessWidget {
   final DummyUser dummyUser;
+  final bool isHomeActivity;
+  final int index;
 
-  ActivityItem({Key key, this.dummyUser}) : super(key: key);
+  ActivityItem({Key key, this.dummyUser, this.isHomeActivity = true, this.index}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -105,13 +107,19 @@ class ActivityItem extends StatelessWidget {
             ),
           ),
         ),
-        dummyUser == dummyUsers.last
+        if(isHomeActivity) dummyUser == dummyUsers.last
             ? Container()
             : Divider(
                 height: 30.h,
                 thickness: 1.h,
                 color: mercuryGrey,
-              ),
+              )
+        else dummyUser == dummyActivities[index].activities.last
+    ? Container() : Divider(
+    height: 30.h,
+    thickness: 1.h,
+    color: mercuryGrey,
+    ),
       ],
     );
   }
