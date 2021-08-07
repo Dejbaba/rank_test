@@ -91,21 +91,30 @@ class ActivityDetails extends StatelessWidget {
 
                         ),
                       ),
-                      SizedBox(width: 30.w,),
+                      SizedBox(width: 40.w,),
                       Expanded(
-                        child: Detail(
-                            description: "Time",
-                            widget: Text(
-                              "8:45 PM",
-                              style: TextStyle(
-                                fontFamily: "Circular Std",
-                                color: shaftGrey,
-                                fontSize: 16.sp,
-                                fontWeight: FontWeight.w700,
-                              ),
-                            ),
+                        child: Container(
+                          //color: Colors.red,
+                          child: Align(
+                            alignment: Alignment.centerRight,
+                            child: Padding(
+                              padding:  EdgeInsets.only(right: 61.w),
+                              child: Detail(
+                                  description: "Time",
+                                  widget: Text(
+                                    "8:45 PM",
+                                    style: TextStyle(
+                                      fontFamily: "Circular Std",
+                                      color: shaftGrey,
+                                      fontSize: 16.sp,
+                                      fontWeight: FontWeight.w700,
+                                    ),
+                                  ),
 
+                                ),
+                            ),
                           ),
+                        ),
                       ),
                     ],
                   ),
@@ -162,28 +171,34 @@ class ActivityDetails extends StatelessWidget {
 
                         ),
                       ),
-                      SizedBox(width: 30.w,),
+                      SizedBox(width: 40.w,),
                       Expanded(
-                        child: Detail(
-                          description: "Status",
-                          widget: Container(
-                            padding: EdgeInsets.symmetric(horizontal: 7.w, vertical: 5.h),
-                            decoration: BoxDecoration(
-                              color: turquoiseGreen.withOpacity(0.1),
-                              borderRadius: BorderRadius.all(Radius.circular(4))
-                            ),
+                        child: Container(
+                          //color: Colors.red,
+                          child: Align(
+                            alignment: Alignment.centerRight,
+                            child: Detail(
+                              description: "Status",
+                              widget: Container(
+                                padding: EdgeInsets.symmetric(horizontal: 7.w, vertical: 5.h),
+                                decoration: BoxDecoration(
+                                  color: turquoiseGreen.withOpacity(0.1),
+                                  borderRadius: BorderRadius.all(Radius.circular(4))
+                                ),
 
-                            child: Text(
-                              "PAID SUCCESSFULLY",
-                              style: TextStyle(
-                                fontFamily: "Circular Std",
-                                color: turquoiseGreen,
-                                fontSize: 12.sp,
-                                fontWeight: FontWeight.w400,
+                                child: Text(
+                                  "PAID SUCCESSFULLY",
+                                  style: TextStyle(
+                                    fontFamily: "Circular Std",
+                                    color: turquoiseGreen,
+                                    fontSize: 12.sp,
+                                    fontWeight: FontWeight.w400,
+                                  ),
+                                ),
                               ),
+
                             ),
                           ),
-
                         ),
                       ),
                     ],
