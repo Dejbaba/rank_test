@@ -40,6 +40,7 @@ class ActivityDetails extends StatelessWidget {
                 left: 23.w,
                 right: 24.w,
                 top: 20.h,
+                bottom: 123.h
               ),
               padding: EdgeInsets.only(
                   left: 22.w,
@@ -90,7 +91,7 @@ class ActivityDetails extends StatelessWidget {
 
                         ),
                       ),
-                      SizedBox(width: 40.w,),
+                      SizedBox(width: 30.w,),
                       Expanded(
                         child: Detail(
                             description: "Time",
@@ -161,7 +162,7 @@ class ActivityDetails extends StatelessWidget {
 
                         ),
                       ),
-                      SizedBox(width: 40.w,),
+                      SizedBox(width: 30.w,),
                       Expanded(
                         child: Detail(
                           description: "Status",
