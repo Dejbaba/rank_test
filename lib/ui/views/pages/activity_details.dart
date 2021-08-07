@@ -112,50 +112,62 @@ class ActivityDetails extends StatelessWidget {
                 description: "From",
                 widget: Row(
                   children: [
-                    Container(
-                      height: 40.h,
-                      width: 40.w,
-                      decoration: BoxDecoration(shape: BoxShape.circle),
-                      child: Image.asset(
-                        dummyUser.image,
-                        height: 40.h,
-                        width: 40.w,
+                    Flexible(
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            height: 40.h,
+                            width: 40.w,
+                            decoration: BoxDecoration(shape: BoxShape.circle),
+                            child: Image.asset(
+                              dummyUser.image,
+                              height: 40.h,
+                              width: 40.w,
+                            ),
+                          ),
+                          SizedBox(width: 8.w,),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  dummyUser.fullName,
+                                  style: TextStyle(
+                                    //fontFamily: "Circular Std",
+                                    color: shaftGrey,
+                                    fontSize: 16.sp,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                  maxLines: 2,
+                                  overflow: TextOverflow.ellipsis,
+                                ),
+                                Text(
+                                  "2056HTGDKPOL90",
+                                  style: TextStyle(
+                                    //fontFamily: "Circular Std",
+                                    color: emperorGrey,
+                                    fontSize: 14.sp,
+                                    fontWeight: FontWeight.normal,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
                     ),
-                    SizedBox(width: 8.w,),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          dummyUser.fullName,
-                          style: TextStyle(
-                            //fontFamily: "Circular Std",
-                            color: shaftGrey,
-                            fontSize: 16.sp,
-                            fontWeight: FontWeight.bold,
-                          ),
-                          maxLines: 2,
-                          overflow: TextOverflow.ellipsis,
-                        ),
-                        Text(
-                          "2056HTGDKPOL90",
-                          style: TextStyle(
-                            //fontFamily: "Circular Std",
-                            color: emperorGrey,
-                            fontSize: 14.sp,
-                            fontWeight: FontWeight.normal,
-                          ),
-                        ),
-                      ],
-                    ),
                     SizedBox(width: 34.w,),
-                    Text(
-                      "View profile",
-                      style: TextStyle(
-                        //fontFamily: "Circular Std",
-                        color: turquoiseGreen,
-                        fontSize: 12.sp,
-                        fontWeight: FontWeight.w500,
+                    Padding(
+                      padding: EdgeInsets.only(right: 22.w),
+                      child: Text(
+                        "View profile",
+                        style: TextStyle(
+                          //fontFamily: "Circular Std",
+                          color: turquoiseGreen,
+                          fontSize: 12.sp,
+                          fontWeight: FontWeight.w500,
+                        ),
                       ),
                     ),
                   ],
