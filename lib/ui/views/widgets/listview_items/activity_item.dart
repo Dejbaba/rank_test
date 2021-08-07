@@ -56,10 +56,10 @@ class ActivityItem extends StatelessWidget {
                             Text(
                               dummyUser.fullName,
                               style: TextStyle(
-                                //fontFamily: "Circular Std",
+                                fontFamily: "Circular Std",
                                 color: Colors.black,
                                 fontSize: 14.sp,
-                                fontWeight: FontWeight.bold,
+                                fontWeight: FontWeight.w500,
                               ),
                               maxLines: 2,
                               overflow: TextOverflow.ellipsis,
@@ -68,7 +68,7 @@ class ActivityItem extends StatelessWidget {
                             Text(
                               dummyUser.date,
                               style: TextStyle(
-                                //fontFamily: "Circular Std",
+                                fontFamily: "Circular Std",
                                 color: manateeGrey,
                                 fontSize: 14.sp,
                                 fontWeight: FontWeight.w400,
@@ -87,7 +87,7 @@ class ActivityItem extends StatelessWidget {
                     Text(
                       dummyUser.amount,
                       style: TextStyle(
-                        //fontFamily: "Circular Std",
+                        fontFamily: "Circular Std",
                         color: spaceGrey,
                         fontSize: 16.sp,
                         fontWeight: FontWeight.w700,

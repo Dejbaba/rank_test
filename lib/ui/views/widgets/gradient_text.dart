@@ -19,10 +19,10 @@ class GradientText extends StatelessWidget {
       child: Text(
         text,
         style: TextStyle(
-          //fontFamily: "Circular Std",
+          fontFamily: "Circular Std",
           color: Colors.white,
           fontSize: 20.sp,
-          fontWeight: FontWeight.w700,
+          fontWeight: FontWeight.w400,
           shadows: <Shadow>[
             Shadow(
               offset: Offset(0, 7.0),

@@ -66,7 +66,7 @@ class _BottomNav extends State<BottomNav> {
             child: BottomNavigationBar(
                 onTap: (index) =>  model.updateIndex(index),
                 type: BottomNavigationBarType.fixed,
-                elevation: 20,
+                elevation: 10,
                 selectedFontSize: width(context) / 35,
                 unselectedFontSize: width(context) / 35,
                 backgroundColor: Colors.white,

@@ -17,7 +17,7 @@ class Detail extends StatelessWidget {
         Text(
           description,
           style: TextStyle(
-            //fontFamily: "Circular Std",
+            fontFamily: "Circular Std",
             color: manateeGrey,
             fontSize: 14.sp,
             fontWeight: FontWeight.w400,

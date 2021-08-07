@@ -20,13 +20,10 @@ class ActivityDetails extends StatelessWidget {
         centerTitle: true,
         elevation: 0,
         backgroundColor: Colors.transparent,
-        // iconTheme: IconThemeData(
-        //   color: manateeGrey,
-        // ),
         title: Text(
           'Details',
           style: TextStyle(
-            //fontFamily: "Circular Std",
+            fontFamily: "Circular Std",
             color: Colors.black,
             fontSize: 24.sp,
             fontWeight: FontWeight.w400,
@@ -61,10 +58,10 @@ class ActivityDetails extends StatelessWidget {
                       Text(
                         "Credit",
                         style: TextStyle(
-                          //fontFamily: "Circular Std",
+                          fontFamily: "Circular Std",
                           color: shaftGrey,
                           fontSize: 16.sp,
-                          fontWeight: FontWeight.bold,
+                          fontWeight: FontWeight.w700,
                         ),
                       ),
                       SizedBox(width: 16.w,),
@@ -83,10 +80,10 @@ class ActivityDetails extends StatelessWidget {
                         widget: Text(
                               "20th Mar 2019",
                               style: TextStyle(
-                                //fontFamily: "Circular Std",
+                                fontFamily: "Circular Std",
                                 color: shaftGrey,
                                 fontSize: 16.sp,
-                                fontWeight: FontWeight.bold,
+                                fontWeight: FontWeight.w700,
                               ),
                             ),
 
@@ -99,10 +96,10 @@ class ActivityDetails extends StatelessWidget {
                           widget: Text(
                             "8:45 PM",
                             style: TextStyle(
-                              //fontFamily: "Circular Std",
+                              fontFamily: "Circular Std",
                               color: shaftGrey,
                               fontSize: 16.sp,
-                              fontWeight: FontWeight.bold,
+                              fontWeight: FontWeight.w700,
                             ),
                           ),
 
@@ -115,9 +112,9 @@ class ActivityDetails extends StatelessWidget {
                   description: "From",
                   widget: Row(
                     children: [
-                      Flexible(
+                      Expanded(
                         child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Container(
                               height: 40.h,
@@ -137,10 +134,10 @@ class ActivityDetails extends StatelessWidget {
                                   Text(
                                     dummyUser.fullName,
                                     style: TextStyle(
-                                      //fontFamily: "Circular Std",
+                                      fontFamily: "Circular Std",
                                       color: shaftGrey,
                                       fontSize: 16.sp,
-                                      fontWeight: FontWeight.bold,
+                                      fontWeight: FontWeight.w700,
                                     ),
                                     maxLines: 2,
                                     overflow: TextOverflow.ellipsis,
@@ -148,10 +145,10 @@ class ActivityDetails extends StatelessWidget {
                                   Text(
                                     "2056HTGDKPOL90",
                                     style: TextStyle(
-                                      //fontFamily: "Circular Std",
+                                      fontFamily: "Circular Std",
                                       color: emperorGrey,
                                       fontSize: 14.sp,
-                                      fontWeight: FontWeight.normal,
+                                      fontWeight: FontWeight.w400,
                                     ),
                                   ),
                                 ],
@@ -160,68 +157,21 @@ class ActivityDetails extends StatelessWidget {
                           ],
                         ),
                       ),
-                      SizedBox(width: 34.w,),
+                      SizedBox(width: 24.w,),
                       Padding(
                         padding: EdgeInsets.only(right: 22.w),
                         child: Text(
                           "View profile",
                           style: TextStyle(
-                            //fontFamily: "Circular Std",
+                            fontFamily: "Circular Std",
                             color: turquoiseGreen,
                             fontSize: 12.sp,
-                            fontWeight: FontWeight.w500,
+                            fontWeight: FontWeight.w400,
                           ),
                         ),
                       ),
                     ],
-                  ),/*ListTile(
-                    leading: Container(
-                      height: 40.h,
-                      width: 40.w,
-                      decoration: BoxDecoration(shape: BoxShape.circle),
-                      child: Image.asset(
-                        dummyUser.image,
-                        height: 40.h,
-                        width: 40.w,
-                      ),
-                    ),
-                    title: Transform.translate(
-                      offset: Offset(-8, 0),
-                      child: Text(
-                        dummyUser.fullName,
-                        style: TextStyle(
-                          //fontFamily: "Circular Std",
-                          color: shaftGrey,
-                          fontSize: 16.sp,
-                          fontWeight: FontWeight.bold,
-                        ),
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                    ),
-                    subtitle: Transform.translate(
-                      offset: Offset(-8, 0),
-                      child: Text(
-                        "2056HTGDKPOL90",
-                        style: TextStyle(
-                          //fontFamily: "Circular Std",
-                          color: emperorGrey,
-                          fontSize: 14.sp,
-                          fontWeight: FontWeight.normal,
-                        ),
-                      ),
-                    ),
-                    contentPadding: EdgeInsets.only(left: 0.0, right: 22.w, top: 0),
-                    trailing: Text(
-                      "View profile",
-                      style: TextStyle(
-                        //fontFamily: "Circular Std",
-                        color: turquoiseGreen,
-                        fontSize: 12.sp,
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
-                  ),*/
+                  ),
                 ),
                 SizedBox(height: 48.h,),
                 Detail(
@@ -229,10 +179,10 @@ class ActivityDetails extends StatelessWidget {
                   widget: Text(
                     "Personal loan payment, please let me\nknow what is left",
                     style: TextStyle(
-                      //fontFamily: "Circular Std",
+                      fontFamily: "Circular Std",
                       color: shaftGrey,
                       fontSize: 16.sp,
-                      fontWeight: FontWeight.bold,
+                      fontWeight: FontWeight.w700,
                     ),
                   ),
 
@@ -246,12 +196,12 @@ class ActivityDetails extends StatelessWidget {
                       child: Detail(
                         description: "Amount",
                         widget: RichText(
-                          //textAlign: TextAlign.center,
                           text: TextSpan(
                             style: TextStyle(
                               color: spaceGrey,
+                              fontFamily: "Circular Std",
                               fontSize: 16.sp,
-                              fontWeight: FontWeight.bold,),
+                              fontWeight: FontWeight.w700,),
                             children: [
                               TextSpan(
                                 text: "₦ 5,450.",
@@ -280,10 +230,10 @@ class ActivityDetails extends StatelessWidget {
                           child: Text(
                             "PAID SUCCESSFULLY",
                             style: TextStyle(
-                              //fontFamily: "Circular Std",
+                              fontFamily: "Circular Std",
                               color: turquoiseGreen,
                               fontSize: 12.sp,
-                              fontWeight: FontWeight.normal,
+                              fontWeight: FontWeight.w400,
                             ),
                           ),
                         ),
@@ -309,7 +259,7 @@ class ActivityDetails extends StatelessWidget {
                       Text(
                         "Receipt",
                         style: TextStyle(
-                          //fontFamily: "Circular Std",
+                          fontFamily: "Circular Std",
                           color: emperorGrey,
                           fontSize: 12.sp,
                           fontWeight: FontWeight.w400,

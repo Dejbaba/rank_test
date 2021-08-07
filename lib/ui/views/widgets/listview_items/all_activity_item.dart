@@ -21,7 +21,7 @@ class AllActivityItem extends StatelessWidget {
           child: Text(
             dummyActivity.date,
             style: TextStyle(
-              //fontFamily: "Circular Std",
+              fontFamily: "Circular Std",
               color: manateeGrey,
               fontSize: 18.sp,
               fontWeight: FontWeight.w400,

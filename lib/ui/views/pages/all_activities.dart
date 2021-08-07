@@ -14,16 +14,13 @@ class AllActivities extends StatelessWidget {
         centerTitle: true,
         elevation: 0,
         backgroundColor: Colors.transparent,
-        // iconTheme: IconThemeData(
-        //   color: manateeGrey,
-        // ),
         title: Text(
           'Activities',
           style: TextStyle(
-            //fontFamily: "Circular Std",
+            fontFamily: "Circular Std",
             color: Colors.black,
             fontSize: 24.sp,
-            fontWeight: FontWeight.bold,
+            fontWeight: FontWeight.w400,
           ),
         ),
         leading: BackNavigator(),

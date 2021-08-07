@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:rank_task/ui/views/pages/all_activities.dart';
@@ -12,21 +14,14 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
+      padding: EdgeInsets.only(top: 5.h),
       children: [
         Stack(
           children: [
             Container(
-              margin: EdgeInsets.only(left: 23.w, right: 25.w),
-              child: Card(
-                elevation: 7,
-                shadowColor: Colors.black,
-                shape: BeveledRectangleBorder(
-                  borderRadius: BorderRadius.circular(6.0),
-                ),
-                child: Container(
                   height: 123.h,
                   width: width(context),
-                  //margin: EdgeInsets.only(left: 23.w, right: 25.w),
+              margin: EdgeInsets.only(left: 23.w, right: 25.w),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(6)),
                     gradient: LinearGradient(
@@ -37,15 +32,14 @@ class Home extends StatelessWidget {
                     ),
                   ),
                 ),
-              ),
-            ),
             Positioned(
-                bottom: -3.h,
-                right: 20.w,
+                bottom: -8.h,
+                right: 27.w,
                 child: Image.asset(
                   "assets/images/vend.png",
                   height: 62.h,
-                  width: 211.w,
+                  width: 197.w,
+                  colorBlendMode: BlendMode.luminosity
                 )),
             Positioned.fill(
                 left: 27.w,
@@ -64,7 +58,7 @@ class Home extends StatelessWidget {
                             Text(
                               "9:30 pm - 23 Feb",
                               style: TextStyle(
-                                //fontFamily: "Circular Std",
+                                fontFamily: "Circular Std",
                                 color: Colors.white,
                                 fontSize: 12.sp,
                                 fontWeight: FontWeight.w400,
@@ -76,19 +70,19 @@ class Home extends StatelessWidget {
                             Text(
                               "Cash Available",
                               style: TextStyle(
-                                //fontFamily: "Circular Std",
+                                fontFamily: "Circular Std",
                                 color: Colors.white,
                                 fontSize: 16.sp,
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
-                            SizedBox(
-                              height: 7.h,
-                            ),
+                            // SizedBox(
+                            //   height: 7.h,
+                            // ),
                             Text(
                               "₦ 200,000",
                               style: TextStyle(
-                                //fontFamily: "Circular Std Font",
+                                fontFamily: "Circular Std",
                                 color: Colors.white,
                                 fontSize: 32.sp,
                                 fontWeight: FontWeight.w400,
@@ -98,10 +92,10 @@ class Home extends StatelessWidget {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.only(top: 16.h),
+                        padding: EdgeInsets.only(top: 13.h),
                         child: TextButton(
                           child: Padding(
-                            padding: EdgeInsets.symmetric(horizontal: 15.w),
+                            padding: EdgeInsets.symmetric(horizontal: 10.w),
                             child: Row(
                                 mainAxisSize: MainAxisSize.min,
                                 children: <Widget>[
@@ -113,7 +107,7 @@ class Home extends StatelessWidget {
                                   Text(
                                     'Add Money',
                                     style: TextStyle(
-                                      //fontFamily: "Circular Std",
+                                      fontFamily: "Circular Std",
                                       color: turquoiseGreen,
                                       fontSize: 11.sp,
                                       fontWeight: FontWeight.w400,
@@ -145,7 +139,7 @@ class Home extends StatelessWidget {
               Text(
                 'Activity',
                 style: TextStyle(
-                  //fontFamily: "Circular Std",
+                  fontFamily: "Circular Std",
                   color: Colors.black,
                   fontSize: 18.sp,
                   fontWeight: FontWeight.w600,
@@ -164,10 +158,10 @@ class Home extends StatelessWidget {
                     child: Text(
                       'View all',
                       style: TextStyle(
-                        //fontFamily: "Circular Std",
+                        fontFamily: "Circular Std",
                         color: manateeGrey,
                         fontSize: 14.sp,
-                        fontWeight: FontWeight.w600,
+                        fontWeight: FontWeight.w400,
                       ),
                     ),
                   ),
@@ -195,7 +189,7 @@ class Home extends StatelessWidget {
           child: Text(
             'Explore',
             style: TextStyle(
-              //fontFamily: "Circular Std",
+              fontFamily: "Circular Std",
               color: Colors.black,
               fontSize: 18.sp,
               fontWeight: FontWeight.w600,
@@ -217,9 +211,9 @@ class Home extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'Explore Places where\nVendPay is accepted',
+                          'Explore places where\nVendPay is accepted',
                           style: TextStyle(
-                            //fontFamily: "Circular Std",
+                            fontFamily: "Circular Std",
                             color: turquoiseBlue,
                             fontSize: 20.sp,
                             fontWeight: FontWeight.w700,
@@ -229,7 +223,7 @@ class Home extends StatelessWidget {
                         Text(
                           'VendPay is accepted in over\n20,000 stores across the country',
                           style: TextStyle(
-                            //fontFamily: "Circular Std",
+                            fontFamily: "Circular Std",
                             color: shaftGrey,
                             fontSize: 12.sp,
                             fontWeight: FontWeight.w400,
