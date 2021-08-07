@@ -23,13 +23,6 @@ class GradientText extends StatelessWidget {
           color: Colors.white,
           fontSize: 20.sp,
           fontWeight: FontWeight.w400,
-          // shadows: <Shadow>[
-          //   Shadow(
-          //     offset: Offset(0, 7.0),
-          //     blurRadius: 10.0,
-          //     color: Colors.black.withOpacity(0.2),
-          //   ),
-          // ],
         ),
 
       ),

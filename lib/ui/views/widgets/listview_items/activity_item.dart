@@ -14,10 +14,11 @@ class ActivityItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        InkWell(
+        InkResponse(
           onTap: () => Navigator.push(
             context,
             MaterialPageRoute(

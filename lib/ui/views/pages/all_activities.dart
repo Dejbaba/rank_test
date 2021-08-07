@@ -31,20 +31,22 @@ class AllActivities extends StatelessWidget {
               ))
         ],
       ),
-      body: ListView.separated(
-        padding: EdgeInsets.only(top: 31.h, bottom: 39.h),
-          itemCount: dummyActivities.length,
-          itemBuilder: (BuildContext context, int index) {
-            return AllActivityItem(
-              dummyActivity: dummyActivities[index],
-            );
-          },
-          separatorBuilder: (context, index) {
-            return SizedBox(
-              height: 24.h,
-            );
-          },
-        ),
+      body: SafeArea(
+        child: ListView.separated(
+          padding: EdgeInsets.only(top: 31.h, bottom: 39.h),
+            itemCount: dummyActivities.length,
+            itemBuilder: (BuildContext context, int index) {
+              return AllActivityItem(
+                dummyActivity: dummyActivities[index],
+              );
+            },
+            separatorBuilder: (context, index) {
+              return SizedBox(
+                height: 24.h,
+              );
+            },
+          ),
+      ),
     );
   }
 }

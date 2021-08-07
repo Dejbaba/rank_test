@@ -10,20 +10,10 @@ GetIt locator = GetIt.instance;
 
 void setupLocator() {
 
-  
-  /// register services
-  //locator.registerLazySingleton<MarvelService>(() => MarvelService());
-
-
-
   /// register models
   locator.registerFactory<BottomNavModel>(() => BottomNavModel());
 
-
-
 }
-
-
 
 ///register multi-providers as a single child widget and pass them to main.dart
 final allProviders = <SingleChildWidget>[

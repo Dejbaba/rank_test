@@ -47,7 +47,9 @@ class _BottomNav extends State<BottomNav> {
             actions: [
               Padding(
                 padding: EdgeInsets.only(right: 26.w),
-                child: Image.asset("assets/images/notification.png", height: 24.h, width: 21.w,),
+                child: InkResponse(
+                  onTap: ()=> print("i was clicked"),
+                    child: Image.asset("assets/images/notification.png", height: 24.h, width: 21.w,)),
               )
             ],
           ),
@@ -66,8 +68,6 @@ class _BottomNav extends State<BottomNav> {
                 onTap: (index) =>  model.updateIndex(index),
                 type: BottomNavigationBarType.fixed,
                 elevation: 10,
-                selectedFontSize: width(context) / 35,
-                unselectedFontSize: width(context) / 35,
                 backgroundColor: Colors.white,
                 currentIndex: model.currentIndex,
                 items: userBottomTabItems(context)),
