@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:rank_task/core/constants/app_constants.dart';
-import 'package:rank_task/ui/shared/colors.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:rank_task/ui/views/widgets/back_navigator.dart';
-import 'package:rank_task/ui/views/widgets/listview_items/activity_item.dart';
 import 'package:rank_task/ui/views/widgets/listview_items/all_activity_item.dart';
 
 class AllActivities extends StatelessWidget {

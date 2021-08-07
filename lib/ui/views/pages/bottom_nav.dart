@@ -7,9 +7,8 @@ import 'package:provider/provider.dart';
 import 'package:rank_task/ui/views/widgets/bottom_nav_items.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:rank_task/ui/views/widgets/gradient_text.dart';
+import '../../shared/colors.dart';
 
-import '../../shared/colors.dart';
-import '../../shared/colors.dart';
 
 
 

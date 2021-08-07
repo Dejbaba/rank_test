@@ -21,7 +21,6 @@ class ActivityItem extends StatelessWidget {
           onTap: () => Navigator.push(
             context,
             MaterialPageRoute(
-              settings: RouteSettings(name: "/activityDetails"),
               builder: (context) => ActivityDetails(
                 dummyUser: dummyUser,
               ),
@@ -32,7 +31,7 @@ class ActivityItem extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Flexible(
+                Expanded(
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -49,7 +48,7 @@ class ActivityItem extends StatelessWidget {
                       SizedBox(
                         width: 8.w,
                       ),
-                      Flexible(
+                      Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -84,13 +83,23 @@ class ActivityItem extends StatelessWidget {
                 Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    Text(
-                      dummyUser.amount,
-                      style: TextStyle(
-                        fontFamily: "Circular Std",
-                        color: spaceGrey,
-                        fontSize: 16.sp,
-                        fontWeight: FontWeight.w700,
+                    RichText(
+                      text: TextSpan(
+                        style: TextStyle(
+                          color: spaceGrey,
+                          fontSize: 16.sp,
+                          fontWeight: FontWeight.w700,
+                        ),
+                        children: [
+                          TextSpan(
+                            text: "₦ ",
+                          ),
+                          TextSpan(
+                              text: dummyUser.amount,
+                              style: TextStyle(
+                                fontFamily: "Circular Std",
+                              ),),
+                        ],
                       ),
                     ),
                     SizedBox(

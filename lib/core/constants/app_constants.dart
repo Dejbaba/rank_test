@@ -103,31 +103,31 @@ final dummyUsers = [
   DummyUser(
     fullName: "Oluwaleke Olorunda",
     image: "assets/images/avatar_1.png",
-    amount: "₦ 5,450",
+    amount: "5,450",
     date: "23 Feb at 9:30 pm"
   ),
   DummyUser(
       fullName: "McDonalds Restaurant, Ajah",
       image: "assets/images/avatar_2.png",
-      amount: "₦ 5,450",
+      amount: "5,450",
       date: "23 Feb at 9:30 pm"
   ),
   DummyUser(
       fullName: "Mensa Robert",
       image: "assets/images/avatar_3.png",
-      amount: "₦ 200,000",
+      amount: "200,000",
       date: "23 Feb at 9:30 pm"
   ),
   DummyUser(
       fullName: "Netflix HD subscription",
       image: "assets/images/avatar_4.png",
-      amount: "₦ 4,850",
+      amount: "4,850",
       date: "23 Feb at 9:30 pm"
   ),
   DummyUser(
       fullName: "Uzodima Chinonzo",
       image: "assets/images/avatar_5.png",
-      amount: "₦ 250,000",
+      amount: "250,000",
       date: "23 Feb at 9:30 pm"
   ),
 ];
@@ -139,31 +139,31 @@ final dummyActivities = [
       DummyUser(
           fullName: "Oluwaleke Olorunda",
           image: "assets/images/avatar_1.png",
-          amount: "₦ 5,450",
+          amount: "5,450",
           date: "23 Feb at 9:30 pm"
       ),
       DummyUser(
           fullName: "McDonalds Restaurant, Ajah",
           image: "assets/images/avatar_2.png",
-          amount: "₦ 5,450",
+          amount: "5,450",
           date: "23 Feb at 9:30 pm"
       ),
       DummyUser(
           fullName: "Mensa Robert",
           image: "assets/images/avatar_3.png",
-          amount: "₦ 200,000",
+          amount: "200,000",
           date: "23 Feb at 9:30 pm"
       ),
       DummyUser(
           fullName: "Netflix HD subscription",
           image: "assets/images/avatar_4.png",
-          amount: "₦ 4,850",
+          amount: "4,850",
           date: "23 Feb at 9:30 pm"
       ),
       DummyUser(
           fullName: "Uzodima Chinonzo",
           image: "assets/images/avatar_5.png",
-          amount: "₦ 250,000",
+          amount: "250,000",
           date: "23 Feb at 9:30 pm"
       ),
     ]
@@ -174,19 +174,19 @@ final dummyActivities = [
       DummyUser(
           fullName: "Oluwatimilehin Ojo",
           image: "assets/images/avatar_6.png",
-          amount: "₦ 5,000",
+          amount: "5,000",
           date: "23 Feb at 9:30 pm"
       ),
       DummyUser(
           fullName: "Isaac Adebanjo",
           image: "assets/images/avatar_7.png",
-          amount: "₦ 34,500",
+          amount: "34,500",
           date: "23 Feb at 9:30 pm"
       ),
       DummyUser(
           fullName: "Exos book Nig. LTD",
           image: "assets/images/avatar_8.png",
-          amount: "₦ 50,200",
+          amount: "50,200",
           date: "23 Feb at 9:30 pm"
       ),
     ]
@@ -197,13 +197,13 @@ final dummyActivities = [
       DummyUser(
           fullName: "Isaac Adebanjo",
           image: "assets/images/avatar_9.png",
-          amount: "₦ 250,000",
+          amount: "250,000",
           date: "23 Feb at 9:30 pm"
       ),
       DummyUser(
           fullName: "Uche Ngozi",
           image: "assets/images/avatar_10.png",
-          amount: "₦ 5,000",
+          amount: "5,000",
           date: "23 Feb at 9:30 pm"
       ),
     ]

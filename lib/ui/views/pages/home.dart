@@ -4,10 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:rank_task/ui/views/pages/all_activities.dart';
 import 'package:rank_task/ui/views/widgets/listview_items/activity_item.dart';
-
 import '../../../core/constants/app_constants.dart';
-import '../../shared/colors.dart';
-import '../../shared/colors.dart';
 import '../../shared/colors.dart';
 
 class Home extends StatelessWidget {
@@ -33,7 +30,7 @@ class Home extends StatelessWidget {
                   ),
                 ),
             Positioned(
-                bottom: -8.h,
+                bottom: -10.h,
                 right: 27.w,
                 child: Image.asset(
                   "assets/images/vend.png",
@@ -77,15 +74,24 @@ class Home extends StatelessWidget {
                               ),
                             ),
                             // SizedBox(
-                            //   height: 7.h,
+                            //   height: 5.h,
                             // ),
-                            Text(
-                              "₦ 200,000",
-                              style: TextStyle(
-                                fontFamily: "Circular Std",
-                                color: Colors.white,
-                                fontSize: 32.sp,
-                                fontWeight: FontWeight.w400,
+                            RichText(
+                              text: TextSpan(
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 32.sp,
+                                  fontWeight: FontWeight.w400,),
+                                children: [
+                                  TextSpan(
+                                    text: "₦ ",
+                                  ),
+                                  TextSpan(
+                                    text: "200,000",
+                                    style: TextStyle(
+                                      fontFamily: "Circular Std",),
+                                  ),
+                                ],
                               ),
                             ),
                           ],
@@ -151,7 +157,6 @@ class Home extends StatelessWidget {
                     onTap: ()=> Navigator.push(
                       context,
                       MaterialPageRoute(
-                        settings: RouteSettings(name: "/allActivities"),
                         builder: (context) => AllActivities(),
                       ),
                     ),

@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:rank_task/core/constants/app_constants.dart';
-import 'package:rank_task/ui/shared/colors.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 ///bottom nav items

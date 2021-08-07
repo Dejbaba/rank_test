@@ -199,16 +199,21 @@ class ActivityDetails extends StatelessWidget {
                           text: TextSpan(
                             style: TextStyle(
                               color: spaceGrey,
-                              fontFamily: "Circular Std",
                               fontSize: 16.sp,
                               fontWeight: FontWeight.w700,),
                             children: [
                               TextSpan(
-                                text: "₦ 5,450.",
+                                text: "₦ ",
+                              ),
+                              TextSpan(
+                                text: "5,450.",
+                                style: TextStyle(
+                                  fontFamily: "Circular Std",),
                               ),
                               TextSpan(
                                   text: "00",
                                   style: TextStyle(
+                                      fontFamily: "Circular Std",
                                       color: spaceGrey.withOpacity(0.4))),
                             ],
                           ),
