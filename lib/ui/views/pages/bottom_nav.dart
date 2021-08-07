@@ -1,6 +1,5 @@
-import 'dart:async';
+
 import 'package:flutter/material.dart';
-import 'package:rank_task/core/constants/app_constants.dart';
 import 'package:rank_task/core/viewmodels/bottom_nav_model.dart';
 import 'package:rank_task/ui/shared/colors.dart';
 import 'package:provider/provider.dart';

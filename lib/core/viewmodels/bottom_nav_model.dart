@@ -2,11 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:rank_task/ui/views/pages/home.dart';
 
 
-import 'base_model.dart';
-
 class BottomNavModel extends ChangeNotifier{
 
-  ///current index of the bottom nav
+  ///current index of the bottom nav-bar
   int _currentIndex = 0;
   int get currentIndex => _currentIndex;
 
@@ -14,9 +12,9 @@ class BottomNavModel extends ChangeNotifier{
 
   ///children of the bottom Nav
   List<Widget>  _children = [
-    Home(),
-    Container(), ///empty view
-    Container() ///empty view
+    Home(), ///(tab 1)
+    Container(), ///empty view(tab 2)
+    Container() ///empty view(tab 3)
   ];
 
   List<Widget> get children => _children;

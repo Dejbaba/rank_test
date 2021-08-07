@@ -1,6 +1,5 @@
-import 'dart:math';
-import 'dart:ui';
 
+import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:rank_task/ui/views/pages/all_activities.dart';
@@ -11,6 +10,7 @@ import '../../shared/colors.dart';
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
     return ListView(
       padding: EdgeInsets.only(top: 5.h),
       children: [
