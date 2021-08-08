@@ -18,6 +18,7 @@ class ActivityItem extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        ///navigate user to activity details screen
         InkResponse(
           onTap: () => Navigator.push(
             context,
@@ -34,7 +35,7 @@ class ActivityItem extends StatelessWidget {
               children: [
                 Expanded(
                   child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Container(
                         height: 40.h,

@@ -98,7 +98,7 @@ class ActivityDetails extends StatelessWidget {
                           child: Align(
                             alignment: Alignment.centerRight,
                             child: Padding(
-                              padding:  EdgeInsets.only(right: 71.w),
+                              padding:  EdgeInsets.only(right: 65.w),
                               child: Detail(
                                   description: "Time",
                                   widget: Text(

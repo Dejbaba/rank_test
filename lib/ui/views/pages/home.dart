@@ -204,14 +204,12 @@ class Home extends StatelessWidget {
   explore(BuildContext context) => Container(
     color: Colors.white,
     width: width(context),
-    padding: EdgeInsets.only(bottom: 17.46.h, left: 30.w, right: 16.w),
+    padding: EdgeInsets.only(bottom: 17.46.h, left: 30.w, right: 16.w, top: 19.h),
     child: Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Padding(
-          padding:  EdgeInsets.only(top: 46.h),
-          child: Column(
+        Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
@@ -235,12 +233,9 @@ class Home extends StatelessWidget {
               ),
             ],
           ),
-        ),
         SizedBox(height: 2.w,),
-        Expanded(child: Padding(
-          padding: EdgeInsets.only(top: 19.h),
-          child: Image.asset("assets/images/explore_places.png"),
-        ))
+        Expanded(child: Image.asset("assets/images/explore_places.png"),
+        )
       ],
     ),
   );

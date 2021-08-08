@@ -23,9 +23,7 @@ class _BottomNav extends State<BottomNav> {
 
   @override
   Widget build(BuildContext context) {
-    return WillPopScope(
-      onWillPop: () async => false,
-      child: Consumer<BottomNavModel>(
+    return Consumer<BottomNavModel>(
         builder: (context, model, child) => Scaffold(
           backgroundColor: mercuryGrey,
           appBar: AppBar(
@@ -73,8 +71,7 @@ class _BottomNav extends State<BottomNav> {
           ),
           body: SafeArea(child: IndexedStack(index: model.currentIndex, children: model.children)),
         ),
-      ),
-    );
+      );
 
   }
 
